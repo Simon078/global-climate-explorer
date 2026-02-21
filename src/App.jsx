@@ -11,10 +11,14 @@ function App() {
   const [climateData, setClimateData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/climateData.json")
-      .then((res) => res.json())
+    const base = import.meta.env.BASE_URL; // "/global-climate-explorer/"
+    fetch(`${base}data/climateData.json`)
+      .then((res) => {
+        if (!res.ok) throw new Error(`climateData.json load failed: ${res.status}`);
+        return res.json();
+      })
       .then((data) => setClimateData(data))
-      .catch((err) => console.error("Error loading climateData.json:", err));
+      .catch((err) => console.error(err));
   }, []);
 
   return (
@@ -46,18 +50,8 @@ function App() {
         climateData={climateData}
       />
 
-      <TrendChart
-        selectedCountry={selectedCountry}
-        climateData={climateData}
-        metric={metric}
-      />
-
-      <InsightsPanel
-        selectedCountry={selectedCountry}
-        climateData={climateData}
-        metric={metric}
-      />
-
+      <TrendChart selectedCountry={selectedCountry} climateData={climateData} metric={metric} />
+      <InsightsPanel selectedCountry={selectedCountry} climateData={climateData} metric={metric} />
       <ScatterPlot climateData={climateData} year={year} />
     </div>
   );

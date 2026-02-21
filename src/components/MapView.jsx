@@ -2,20 +2,18 @@ import { useEffect, useState } from "react";
 import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
 import Legend from "./Legend";
 
-function MapView({
-  selectedCountry,
-  onCountrySelect,
-  year,
-  metric,
-  climateData,
-}) {
+function MapView({ selectedCountry, onCountrySelect, year, metric, climateData }) {
   const [geoData, setGeoData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/world.geo.json")
-      .then((res) => res.json())
+    const base = import.meta.env.BASE_URL; // "/global-climate-explorer/"
+    fetch(`${base}data/world.geo.json`)
+      .then((res) => {
+        if (!res.ok) throw new Error(`world.geo.json load failed: ${res.status}`);
+        return res.json();
+      })
       .then((data) => setGeoData(data))
-      .catch((err) => console.error("Error loading world.geo.json:", err));
+      .catch((err) => console.error(err));
   }, []);
 
   const getColor = (value) => {
@@ -28,7 +26,6 @@ function MapView({
       return "#FD8D3C";
     }
 
-    // co2
     if (value > 15) return "#084081";
     if (value > 10) return "#0868ac";
     if (value > 5) return "#2b8cbe";
@@ -46,8 +43,7 @@ function MapView({
         : null;
 
     return {
-      fillColor:
-        countryName === selectedCountry ? "#ff5722" : getColor(value),
+      fillColor: countryName === selectedCountry ? "#ff5722" : getColor(value),
       weight: 1,
       color: "white",
       fillOpacity: 0.7,
@@ -58,6 +54,12 @@ function MapView({
     layer.on({
       click: () => {
         onCountrySelect(feature.properties.name);
+      },
+      mouseover: (e) => {
+        e.target.setStyle({ weight: 2 });
+      },
+      mouseout: (e) => {
+        e.target.setStyle({ weight: 1 });
       },
     });
   };
