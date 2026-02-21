@@ -1,0 +1,132 @@
+{
+  "Germany": {
+    "2010": { "temperature": 1.02, "co2": 9.1 },
+    "2015": { "temperature": 1.18, "co2": 8.9 },
+    "2020": { "temperature": 1.63, "co2": 7.6 }
+  },
+  "France": {
+    "2010": { "temperature": 0.95, "co2": 5.5 },
+    "2015": { "temperature": 1.10, "co2": 5.2 },
+    "2020": { "temperature": 1.45, "co2": 4.6 }
+  },
+  "United Kingdom": {
+    "2010": { "temperature": 0.90, "co2": 7.2 },
+    "2015": { "temperature": 1.05, "co2": 6.5 },
+    "2020": { "temperature": 1.48, "co2": 5.8 }
+  },
+  "Italy": {
+    "2010": { "temperature": 1.00, "co2": 6.7 },
+    "2015": { "temperature": 1.12, "co2": 6.2 },
+    "2020": { "temperature": 1.50, "co2": 5.4 }
+  },
+  "Spain": {
+    "2010": { "temperature": 0.98, "co2": 6.0 },
+    "2015": { "temperature": 1.15, "co2": 5.6 },
+    "2020": { "temperature": 1.47, "co2": 4.9 }
+  },
+  "Netherlands": {
+    "2010": { "temperature": 0.88, "co2": 10.3 },
+    "2015": { "temperature": 1.05, "co2": 9.5 },
+    "2020": { "temperature": 1.40, "co2": 8.4 }
+  },
+  "Poland": {
+    "2010": { "temperature": 0.92, "co2": 8.2 },
+    "2015": { "temperature": 1.07, "co2": 7.9 },
+    "2020": { "temperature": 1.38, "co2": 7.2 }
+  },
+  "United States of America": {
+    "2010": { "temperature": 0.88, "co2": 16.4 },
+    "2015": { "temperature": 1.05, "co2": 15.5 },
+    "2020": { "temperature": 1.21, "co2": 13.7 }
+  },
+  "Canada": {
+    "2010": { "temperature": 1.20, "co2": 15.8 },
+    "2015": { "temperature": 1.40, "co2": 15.0 },
+    "2020": { "temperature": 1.80, "co2": 14.2 }
+  },
+  "Mexico": {
+    "2010": { "temperature": 0.85, "co2": 3.9 },
+    "2015": { "temperature": 1.00, "co2": 4.2 },
+    "2020": { "temperature": 1.35, "co2": 3.7 }
+  },
+  "Brazil": {
+    "2010": { "temperature": 0.75, "co2": 2.1 },
+    "2015": { "temperature": 0.95, "co2": 2.4 },
+    "2020": { "temperature": 1.30, "co2": 2.2 }
+  },
+  "Argentina": {
+    "2010": { "temperature": 0.82, "co2": 4.5 },
+    "2015": { "temperature": 1.00, "co2": 4.7 },
+    "2020": { "temperature": 1.28, "co2": 4.2 }
+  },
+  "China": {
+    "2010": { "temperature": 1.12, "co2": 6.7 },
+    "2015": { "temperature": 1.31, "co2": 7.4 },
+    "2020": { "temperature": 1.55, "co2": 8.2 }
+  },
+  "India": {
+    "2010": { "temperature": 0.75, "co2": 1.7 },
+    "2015": { "temperature": 0.98, "co2": 1.9 },
+    "2020": { "temperature": 1.10, "co2": 2.0 }
+  },
+  "Japan": {
+    "2010": { "temperature": 1.05, "co2": 9.2 },
+    "2015": { "temperature": 1.20, "co2": 8.7 },
+    "2020": { "temperature": 1.60, "co2": 8.1 }
+  },
+  "South Korea": {
+    "2010": { "temperature": 1.00, "co2": 12.3 },
+    "2015": { "temperature": 1.18, "co2": 11.8 },
+    "2020": { "temperature": 1.55, "co2": 10.9 }
+  },
+  "Australia": {
+    "2010": { "temperature": 0.90, "co2": 17.0 },
+    "2015": { "temperature": 1.10, "co2": 16.2 },
+    "2020": { "temperature": 1.50, "co2": 15.4 }
+  },
+  "Russia": {
+    "2010": { "temperature": 1.30, "co2": 11.6 },
+    "2015": { "temperature": 1.45, "co2": 11.2 },
+    "2020": { "temperature": 1.80, "co2": 10.5 }
+  },
+  "South Africa": {
+    "2010": { "temperature": 0.85, "co2": 7.4 },
+    "2015": { "temperature": 1.00, "co2": 7.1 },
+    "2020": { "temperature": 1.32, "co2": 6.5 }
+  },
+  "Egypt": {
+    "2010": { "temperature": 0.78, "co2": 2.5 },
+    "2015": { "temperature": 0.95, "co2": 2.8 },
+    "2020": { "temperature": 1.25, "co2": 3.0 }
+  },
+  "Nigeria": {
+    "2010": { "temperature": 0.70, "co2": 0.6 },
+    "2015": { "temperature": 0.85, "co2": 0.7 },
+    "2020": { "temperature": 1.10, "co2": 0.8 }
+  },
+  "Indonesia": {
+    "2010": { "temperature": 0.72, "co2": 2.0 },
+    "2015": { "temperature": 0.95, "co2": 2.3 },
+    "2020": { "temperature": 1.20, "co2": 2.5 }
+  },
+  "Saudi Arabia": {
+    "2010": { "temperature": 0.88, "co2": 18.2 },
+    "2015": { "temperature": 1.05, "co2": 19.0 },
+    "2020": { "temperature": 1.42, "co2": 17.5 }
+  },
+  "Turkey": {
+    "2010": { "temperature": 0.82, "co2": 4.2 },
+    "2015": { "temperature": 1.00, "co2": 4.5 },
+    "2020": { "temperature": 1.30, "co2": 4.9 }
+  },
+  "Thailand": {
+    "2010": { "temperature": 0.75, "co2": 3.6 },
+    "2015": { "temperature": 0.92, "co2": 3.9 },
+    "2020": { "temperature": 1.18, "co2": 4.1 }
+  },
+  "Vietnam": {
+    "2010": { "temperature": 0.70, "co2": 1.6 },
+    "2015": { "temperature": 0.88, "co2": 1.9 },
+    "2020": { "temperature": 1.12, "co2": 2.3 }
+  }
+}
